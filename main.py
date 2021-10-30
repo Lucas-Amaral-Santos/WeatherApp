@@ -5,7 +5,7 @@ from pprint import pprint
 import os
 import sys
 import time
-
+import requests
 
 cities_id = [3439525, 3439781, 3440645, 3442098, 3442778, 3443341, 3442233, 3440781,
             3441572, 3441575, 3443207, 3442546, 3441287, 3441242, 3441686, 3440639,

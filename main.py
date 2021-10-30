@@ -5,8 +5,7 @@ from pprint import pprint
 import os
 import sys
 import time
-import aiohttp
-import asyncio
+
 
 cities_id = [3439525, 3439781, 3440645, 3442098, 3442778, 3443341, 3442233, 3440781,
             3441572, 3441575, 3443207, 3442546, 3441287, 3441242, 3441686, 3440639,
@@ -66,7 +65,8 @@ for id in cities_id:
     r = "http://api.openweathermap.org/data/2.5/weather?id=" + city_id + "&appid=" + OWM_key
 
     weather_data = requests.post(r, data=upload_in_chunks(__file__, chunksize=1)).json()
+
     time.sleep(1)
 
-
+    pprint(weather_data)
 
